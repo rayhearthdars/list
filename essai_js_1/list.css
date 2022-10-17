@@ -1,0 +1,57 @@
+body {
+	background-color: #000000;
+	box-sizing: border-box;
+}
+div {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	color: #FFFFFF;
+	text-align: center;
+	font-weight: 900;
+	margin: 0;
+	padding: 20px;	
+}
+
+h2 {
+	color: #FFFFFF;
+	text-align: center;
+	font-weight: 800;
+	margin: 0;
+	padding: 30px;	
+}
+
+ul {
+	list-style: none;
+	width: 99.5%;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	border: 1px solid #000000;
+	border-radius: 5px;
+	padding: 5px;
+	float: left;
+	display: block;
+	width: 100%;
+	color: #FFFFFF;
+	font-weight: 700;
+}
+
+.hot {
+	background-color: #A54242;
+}
+
+.normal {
+	background-color: #42A563;
+}
+
+.cool {
+	background-color: #4291A5;
+}
+
+.completed {
+	background-color: #A0A0A0;
+}
