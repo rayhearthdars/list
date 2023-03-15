@@ -21,21 +21,5 @@ var elClick = document.getElementsByTagName('li');
 elClick = Array.from(elClick);
 elClick.forEach(element => element.addEventListener('click', function(e) {state(e)}, false));
 
-
-// add new items in list
-
-function add() {
-var item = document.getElementsByTagName('li');
-
-var txt = document.getElementById(newItems);
-var newItem = document.createTextNode(txt);
-item.createElement('li');
-item.appendChild(newItem);
-
-}
-
-document.getElementsByTagName('ul')[0].addEventListener('submit', add, false);
-
-
 	
 
