@@ -36,4 +36,3 @@ function addListItem() {
 let submit = document.getElementsByClassName('submit');
 submit[0].addEventListener('click', function() {addListItem()}, false);
 
-// hi
