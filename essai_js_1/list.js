@@ -6,14 +6,14 @@ function state(e) {
 	}
 	el = e.target || e.srcElement;
 
-	if (el.className === 'hot') {
-		el.classList.replace('hot', 'normal');
-	} else if (el.className === 'normal') {
+	if (el.className === 'normal') {
 		el.classList.replace('normal', 'cool');
 	} else if (el.className === 'cool') {
 		el.classList.replace('cool', 'completed');
+	} else if (el.className === 'completed') {
+		el.classList.replace('completed', 'hot');
 	} else {
-		el.classList.replace('completed', 'hot')
+		el.classList.replace('hot', 'normal')
 	}
 }
 
@@ -25,7 +25,7 @@ elClick.forEach(element => element.addEventListener('click', function(e) {state(
 // add new items in list
 function addListItem() {
 	let listItem = document.createElement('li');
-	listItem.classList.add('hot');
+	listItem.classList.add('normal');
 	let newItem = document.createTextNode(document.getElementById("newItems").value);
 	listItem.appendChild(newItem);
 	let newListItem = document.getElementById("list");
